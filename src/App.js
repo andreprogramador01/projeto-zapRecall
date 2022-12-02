@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import styled from "styled-components";
+import GlobalStyle from "./css/globalStyle";
+import Perguntas from "./components/Perguntas";
+import logo from "./img/logo.png"
+export default function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div className="screen-container">
+      <div className="logo-container">
+        <img src={logo} />
+        <h1>ZapRecall</h1>
+      </div>
+        <Perguntas />
+      </div>
+      <div className="footer-concluidos">
+        0/4 Concluídos
+      </div>
+      <GlobalStyle />
     </div>
   );
 }
 
-export default App;
+
