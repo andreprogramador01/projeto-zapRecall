@@ -114,6 +114,12 @@
     line-height: 19px;
     color: #333333;
   }
+  .pergunta-aberta img{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor:pointer;
+  }
   
   .pergunta-aberta {
     width: 300px;
