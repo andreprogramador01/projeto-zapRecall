@@ -26,7 +26,7 @@ const [cardsClicados, setCardsClicados] = useState([{}])
                     cardsClicados={cardsClicados}
                     cards={cards} />
     </ContainerScreen>
-      <FooterConcluidos>
+      <FooterConcluidos data-test="footer">
       {cardsClicados.length - 1}/{cards.length} Concluídos
       </FooterConcluidos>
       <GlobalStyle />
